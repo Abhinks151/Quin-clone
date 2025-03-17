@@ -1,9 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 @font-face {
 	font-family: "Gelica";
 	src: url("./fonts/Fontspring-DEMO-gelica-extralight.otf") format("opentype");
@@ -11,14 +5,23 @@
 	font-style: normal;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .container {
 	width: 100%;
 }
+
+/* Header */
 
 header {
 	height: 800px;
 	background-color: #facc73;
 	background-image: url(bg-yellow.png);
+	background-size: 100% 100%;
 }
 
 nav {
@@ -27,8 +30,8 @@ nav {
 }
 
 nav img {
-	height: 2.2rem;
 	margin-top: 20px;
+	height: 2.2rem;
 }
 
 .hero {
@@ -90,6 +93,8 @@ nav img {
 	width: 100%;
 }
 
+/* Features */
+
 .features {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -98,6 +103,13 @@ nav img {
 	justify-content: center;
 	align-items: center;
 }
+
+.features-image {
+	position: relative;
+	top: 90px;
+	left: 567px;
+}
+
 .features-title {
 	font-family: "Gelica", Georgia, sans-serif;
 	letter-spacing: -0.1rem;
@@ -109,12 +121,6 @@ nav img {
 	font-weight: 300;
 	line-height: 110%;
 	margin-top: 90px;
-}
-
-.features-image {
-	position: relative;
-	top: 90px;
-	left: 567px;
 }
 
 .features-paragraph {
@@ -167,9 +173,12 @@ nav img {
 }
 
 .btn-secondary {
-	margin-bottom: 150px;
-	margin-top: 150px;
+	/* margin-bottom: 150px;
+	margin-top: 150px; */
+	margin: 150px 0;
 }
+
+/* About */
 
 .about-container {
 	background-color: #facc73;
@@ -260,19 +269,21 @@ nav img {
 	mask-repeat: no-repeat;
 }
 
+/* CTA */
+
 .cta-container {
 	background-color: #1b1f20;
 	background-image: url(images/cta-bg.png);
-	background-repeat: y;
+	background-size: 100% 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 }
 
 .cta-section {
-	width: 800px;
 	height: 600px;
+	width: 800px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -281,14 +292,12 @@ nav img {
 .cta-heading {
 	font-family: "Gelica", Georgia, sans-serif;
 	letter-spacing: -0.1rem;
-	flex: none;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 4rem;
 	font-weight: 300;
 	line-height: 110%;
 	color: #fff;
-	max-width: 760px;
 	margin-top: 150px;
 	margin-bottom: 50px;
 	text-align: center;
@@ -306,12 +315,15 @@ nav img {
 	left: -200px;
 }
 
+/* Fotter */
+
 .footer-section {
 	height: 425px;
 	background-color: #1b1f20;
 	display: flex;
 	justify-content: space-between;
 }
+
 .footer-left {
 	width: 375px;
 	height: 100%;
@@ -334,16 +346,16 @@ nav img {
 	line-height: 150%;
 }
 
-.footer-left ul li a svg {
-	width: 30px;
-	fill: #a09c9c;
-}
-
 .footer-left ul {
 	display: flex;
 	margin-top: 100px;
 	gap: 12px;
 	list-style: none;
+}
+
+.footer-left ul li a svg {
+	width: 30px;
+	fill: #a09c9c;
 }
 
 .footer-right {
